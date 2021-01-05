@@ -9,6 +9,6 @@ puts "----------"
 # Update the first store (`@store1`) instance in the database. (Change its name or something.)
 
 @store1 = Store.find_by(id: '1')
-@store1 = Store.find_by(id: '2')
+@store2 = Store.find_by(id: '2')
 
 @store1.name = 'Updatopia'

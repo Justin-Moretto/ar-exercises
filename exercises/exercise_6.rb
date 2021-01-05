@@ -20,16 +20,10 @@ puts "----------"
 # No need to assign the employees to variables though. Create them through the `@store#` instance variables that you defined in previous exercises.
 # Create a bunch under `@store1` (Burnaby) and `@store2` (Richmond). Eg: `@store1.employees.create(...)`.
 
-class stores < ActiveRecord
-  has_many :employees
-end
 
-class employees < ActiveRecord
-  belongs_to :store
-end
 
 @store1.employees.create(first_name: "Khurram", last_name: "Virani", hourly_rate: 60)
 @store1.employees.create(first_name: "Patrick Star", last_name: "Star", hourly_rate: 15)
 
 @store2.employees.create(first_name: "Squidward", last_name: "Tentacles", hourly_rate: 69)
-@store2.employees.create(first_name: "Spongebob", last_name: "Squarepants", hourly_rate: 420)
+@store2.employees.create(first_name: "Spongebob", last_name: "Squarepants", hourly_rate: 42)
